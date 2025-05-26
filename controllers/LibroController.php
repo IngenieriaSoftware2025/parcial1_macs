@@ -166,7 +166,11 @@ class LibroController extends ActiveRecord
 
             $id = filter_var($_GET['id'], FILTER_SANITIZE_NUMBER_INT);
 
-            $ejecutar = Libros::EliminarLibros($id);
+            $data = Libros::find($id);
+            $data->sincronizar([
+                'libro_situacion' => 0
+            ]);
+            $data->actualizar();
 
             http_response_code(200);
             echo json_encode([

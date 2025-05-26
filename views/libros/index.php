@@ -111,6 +111,21 @@
             </div>
         </div>
     </div>
+
+    <div class="row justify-content-center mt-5">
+        <div class="col-lg-11">
+            <div class="card shadow-lg border-success rounded-4">
+                <div class="card-body">
+                    <h3 class="text-center text-success mb-4">Libros registrados en la base de datos</h3>
+
+                    <div class="table-responsive">
+                        <table class="table table-striped table-hover table-bordered align-middle rounded-3 overflow-hidden" id="TableLibros">
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 </div>
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
 <script src="<?= asset('build/js/libros/index.js') ?>"></script>

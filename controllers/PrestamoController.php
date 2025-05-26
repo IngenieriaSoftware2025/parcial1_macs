@@ -94,7 +94,7 @@ class PrestamoController extends ActiveRecord
 
             $sql = "SELECT p.*, l.libro_titulo, l.libro_autor 
                     FROM prestamos p 
-                    INNER JOIN libros l ON p.libro_id = l.libro_id 
+                    LEFT JOIN libros l ON p.libro_id = l.libro_id 
                     WHERE $where";
             $data = self::fetchArray($sql);
 
