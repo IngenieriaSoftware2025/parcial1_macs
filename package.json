@@ -1,7 +1,7 @@
 {
-  "name": "demo-app",
+  "name": "parcial1_macs",
   "version": "1.0.0",
-  "description": "Aplicacion MVC demo",
+  "description": "Examen Parcial",
   "main": "index.js",
   "scripts": {
     "build": "webpack",
